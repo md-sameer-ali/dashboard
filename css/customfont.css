@@ -1,0 +1,41 @@
+@font-face {
+    font-family: 'SF Pro Display Light';
+    src: url('fonts/SF-PRO-DISPLAY-LIGHT.OTF') format('opentype');
+    font-weight: 200;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Regular';
+    src: url('fonts/SF-PRO-DISPLAY-REGULAR.OTF') format('opentype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'SF Pro Display Medium';
+    src: url('fonts/SF-PRO-DISPLAY-MEDIUM.OTF') format('opentype');
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'Bold';
+    src: url('fonts/SF-PRO-DISPLAY-BOLD.OTF') format('opentype');
+}
+
+@font-face {
+    font-family: 'SF Pro Display Semibold';
+    src: url('fonts/SF-PRO-DISPLAY-SEMIBOLD.OTF') format('opentype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+@font-face {
+    font-family: 'SF Pro Display Heavy';
+    src: url('fonts/SF-PRO-DISPLAY-HEAVY.OTF') format('opentype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
