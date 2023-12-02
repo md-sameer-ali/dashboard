@@ -1,0 +1,754 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlixa Dashboard</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!---===== FONT AWESOME ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---===== CUSTOM CSS ===== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customfont.css">
+
+
+</head>
+
+<body>
+    <!-- background click hide dropdown change the place for both use to hide profile dropdown and visibility dropdown so I change the place and put it on right-side-bar -->
+    
+    <!--===== HEADER SECTION ===== -->
+    <header class="feed">
+        <div class="contain">
+            <div class="main_header main-header-new">
+                <div class="search_box search_box_active">
+                    <form><input type="search" placeholder="Search" class="textbar"></form>
+                </div>
+                <div class="log-in-div">
+                    <a class="after-login">
+                        <img src="images/profile-photo.png" alt="">
+                    </a>
+                    <div class="share-box-login">
+                        <ul>
+                            <li>
+                                <img src="images/sign-out-profile.png" alt="">
+                                <p>
+                                    <span>Sophia</span>
+                                    <span>sophia@vlixa.com</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Sign Out
+                                    <img src="images/sign-out-icon.png" alt="sign-out-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===== NAV SECTION ===== -->
+    <section class="nav-area">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="images/new-logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="nav-main">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/dashboard-icon.png" alt="Dashboard-icon">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="star.html">
+                        <img src="images/star-icon.png" alt="Dashboard-icon">
+                        <span>Star</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="post.html">
+                        <img src="images/post-icon.png" alt="Dashboard-icon">
+                        <span>Post</span>
+                    </a>
+                </li>
+                <li class="title-li">
+                    <span class="nav-title">Video</span>
+                </li>
+                <li>
+                    <a href="model.html">
+                        <img src="images/model-icon.png" alt="Dashboard-icon">
+                        <span>Model</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="model-category.html">
+                        <img src="images/category-icon.png" alt="Dashboard-icon">
+                        <span>Category</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="create-video.html">
+                        <img src="images/create-video-icon.png" alt="Dashboard-icon">
+                        <span>Create Video</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="published.html">
+                        <img src="images/publish-icon.png" alt="Dashboard-icon">
+                        <span>Published Videos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="unpublished.html">
+                        <img src="images/unpublish.png" alt="Dashboard-icon">
+                        <span>Unpublished Videos</span>
+                    </a>
+                </li>
+                <li class="title-li">
+                    <span class="nav-title">Blog</span>
+                </li>
+                <li>
+                    <a href="blog.html">
+                        <img src="images/blog.png" alt="Dashboard-icon">
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="blog-model.html">
+                        <img src="images/model-icon.png" alt="Dashboard-icon">
+                        <span>Model</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="blog-category.html">
+                        <img src="images/category-icon.png" alt="Dashboard-icon">
+                        <span>Category</span>
+                    </a>
+                </li>
+                <li class="title-li">
+                    <span class="nav-title">Others</span>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <img src="images/settings.png" alt="Dashboard-icon">
+                        <span>settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <img src="images/user.png" alt="Dashboard-icon">
+                        <span>Users</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!--===== DELETE POPUP ===== -->
+    <div class="delete-popup">
+        <div class="overlay2"></div>
+        <div class="popup">
+            <img src="images/delete-cross.png" alt="close" class="close">
+            <img src="images/delete-popup-icon.png" alt="what">
+            <p>Are you sure you want to delete?</p>
+            <div class="yes-no-button">
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+        </div>
+    </div>
+    <main class="total-content create-blog-page">
+        <div class="container">
+            <ul class="custom-breadcrumb">
+                <li>
+                    <a href="">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Model
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Create Blog
+                    </a>
+                </li>
+            </ul>
+            <div class="settings-wrapper">
+                <div class="settings">
+                    <form action="" class="setting-form">
+                        <div class="name-area">
+                            <label>Name</label>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="name-area link-edit">
+                            <input type="text" value="https://vlixa/blog/Ben Affleck and Ben Affleck" disabled>
+                            <!-- <a href="">
+                                https://vlixa/blog/Ben Affleck and Ben Affleck
+                            </a> -->
+                            <button class="action-button edit">
+                                <div class="icon-area">
+                                    <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                    <img src="images/edit-icon.png" alt="edit active" class="edit-img-active">
+                                </div>
+                                <span>Edit</span>
+                            </button>
+                        </div>
+                        <div class="upload-area last-input-area">
+                            <label>Featured Image</label>
+                            <div class="file-upload">
+                                <div class="file-select">
+                                    <div class="file-select-button" id="fileName">Choose File</div>
+                                    <div class="file-select-name" id="noFile">No file chosen...</div>
+                                    <input type="file" name="chooseFile" id="chooseFile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name-area">
+                            <label>Description </label>
+                            <div id="editor">This is some sample content.</div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="settings-wrapper settings-wrapper-upload">
+                <div class="settings">
+                    <h2 class="same-to-label">Edit Image</h2>
+                    <div class="tabs">
+                        <ul id="tabs-nav" class="tab-ul tab-ul2">
+                            <li>
+                                <a href="#tab1">
+                                    <img src="images/add-photo-icon.png" alt="img">
+                                    Add Photo
+                                </a>
+                            </li>
+                            <li>
+                                <a href="#tab2">
+                                    <img src="images/upload-video.png" alt="img">
+                                    Add Video
+                                </a>
+                            </li>
+                        </ul> <!-- END tabs-nav -->
+                        <div id="tabs-content">
+                            <div id="tab1" class="tab-content">
+                                <form action="" class="setting-form">
+                                    <div class="upload-area">
+                                        <div class="file-upload">
+                                            <div class="file-select">
+                                                <div class="total-upload">
+                                                    <div class="file-select-button" id="fileName2">Choose File</div>
+                                                    <div class="file-select-name" id="noFile2">No file chosen...</div>
+                                                </div>
+                                                <a class="upload-btn">
+                                                    <img src="images/upload-icon.png" alt="img">
+                                                    Upload Image
+                                                </a>
+                                                <input type="file" name="chooseFile" id="chooseFile2">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                            <div id="tab2" class="tab-content">
+                                <form action="" class="setting-form">
+                                    <div class="upload-area">
+                                        <div class="file-upload">
+                                            <div class="file-select">
+                                                <div class="total-upload">
+                                                    <div class="file-select-button" id="fileName3">Choose File</div>
+                                                    <div class="file-select-name" id="noFile3">No file chosen...</div>
+                                                </div>
+                                                <a class="upload-btn">
+                                                    <img src="images/upload-icon.png" alt="img">
+                                                    Upload Image
+                                                </a>
+                                                <input type="file" name="chooseFile" id="chooseFile3">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div> <!-- END tabs-content -->
+                    </div>
+                </div>
+            </div>
+            <div class="settings-wrapper-preview">
+                <div class="settings">
+                    <div class="serial-area">
+                        <h2>
+                            Serial No: <span>1</span>
+                        </h2>
+                        <form action="">
+                            <div class="checkboxes__item">
+                                <label class="checkbox style-c">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Check to watermark</div>
+                                </label>
+                            </div>
+                        </form>
+                        <div class="delete-area-blog">
+                            <a href="">
+                                <img src="images/b-delete.png" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="photo-area">
+                        <h2>
+                            Image Title
+                        </h2>
+                        <form class="form-main">
+                            <input type="text" name="" id="" placeholder="Title here...">
+                        </form>
+                        <div class="image-area">
+                            <img src="images/Natalie_Roush_Ass_Bikini_Dress_Flash_Onlyfans_Set_Leaked-KOVBUT.jpg"
+                                alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-wrapper-preview">
+                <div class="settings">
+                    <div class="serial-area">
+                        <h2>
+                            Serial No: <span>1</span>
+                        </h2>
+                        <form action="">
+                            <div class="checkboxes__item">
+                                <label class="checkbox style-c">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Check to watermark</div>
+                                </label>
+                            </div>
+                        </form>
+                        <div class="delete-area-blog">
+                            <a href="">
+                                <img src="images/b-delete.png" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="photo-area">
+                        <h2>
+                            Image Title
+                        </h2>
+                        <form class="form-main">
+                            <input type="text" name="" id="" placeholder="Title here...">
+                        </form>
+                        <div class="image-area">
+                            <img src="images/Natalie_Roush_Ass_Bikini_Dress_Flash_Onlyfans_Set_Leaked-SBYMFW.jpg"
+                                alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="settings-wrapper-preview">
+                <div class="settings">
+                    <div class="serial-area">
+                        <h2>
+                            Serial No: <span>1</span>
+                        </h2>
+                        <form action="">
+                            <div class="checkboxes__item">
+                                <label class="checkbox style-c">
+                                    <input type="checkbox" />
+                                    <div class="checkbox__checkmark"></div>
+                                    <div class="checkbox__body">Check to watermark</div>
+                                </label>
+                            </div>
+                        </form>
+                        <div class="delete-area-blog">
+                            <a href="">
+                                <img src="images/b-delete.png" alt="img">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="photo-area">
+                        <h2>
+                            Image Title
+                        </h2>
+                        <form class="form-main">
+                            <input type="text" name="" id="" placeholder="Title here...">
+                        </form>
+                        <div class="image-area">
+                            <img src="images/Natalie_Roush_Ass_Bikini_Dress_Flash_Onlyfans_Set_Leaked-DLDMED.jpg"
+                                alt="img">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section class="right-side-bar">
+        <div class="three-btn-area">
+            <button>
+                Preview
+            </button>
+            <button>
+                Update
+            </button>
+            <button>
+                Save Draft
+            </button>
+        </div>
+        <div class="three-btn-area2">
+            <div class="visibility-details">
+                <h2>
+                    Visibility :
+                </h2>
+                <div class="visibility">
+                    <img src="images/public-icon.png" alt="img">
+                    <span>Public</span>
+                    <img src="images/down-arrow-icon.png" alt="img">
+                    <div class="dropdown-radio">
+                        <div class="custom_radio">
+                            <input type="radio" id="featured-51" name="featured" checked><label
+                                for="featured-51">Public</label>
+                            <br>
+                            <input type="radio" id="featured-52" name="featured"><label
+                                for="featured-52">Private</label>
+                            <br>
+                            <input type="radio" id="featured-53" name="featured"><label for="featured-53">Draft</label>
+                        </div>
+                        <div class="save-area-main">
+                            <div class="save-area">
+                                <img src="images/save-icon.png" alt="img">
+                                <span>Save</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="visibility-details">
+                <h2>
+                    Publish :
+                </h2>
+                <div class="user-name">
+                    <p>Sept. 5,2023</p>
+                    <span>8:15 p.m.</span>
+                </div>
+            </div>
+            <div class="visibility-details">
+                <h2>
+                    URL :
+                </h2>
+                <div class="url-area">
+                    <a href="">
+                        https://vlixa/blog/Ben Affleck and Ben Affleck and Ben Affleck and
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="choose-area">
+            <h2>
+                Choose Category
+            </h2>
+            <div class="dropdown-container dropdown-container2">
+                <div class="dropdown-toggle click-dropdown2">
+                    <span>Latest</span>
+                    <img src="images/down-light-arrow.png" alt="img">
+                </div>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Latest Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Popular Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">New Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Trending Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Featured Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Latest Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Popular Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">New Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Trending Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Featured Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Latest Video</div>
+                                    </label>
+                                </div>
+                            </form>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="choose-area">
+            <h2>
+                Choose Tags
+            </h2>
+            <div class="dropdown-container dropdown-container2">
+                <div class="dropdown-toggle click-dropdown2">
+                    <span>Model</span>
+                    <img src="images/down-light-arrow.png" alt="img">
+                </div>
+                <div class="dropdown-menu">
+                    <ul>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Model</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Popular</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">New</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Trending</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Featured</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Latest</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Popular</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">New</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Trending</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Featured</div>
+                                    </label>
+                                </div>
+                            </form>
+                        </li>
+                        <li>
+                            <form action="">
+                                <div class="checkboxes__item">
+                                    <label class="checkbox style-c">
+                                        <input type="checkbox" />
+                                        <div class="checkbox__checkmark"></div>
+                                        <div class="checkbox__body">Latest</div>
+                                    </label>
+                                </div>
+                            </form>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="choose-area">
+            <h2>
+                Author
+            </h2>
+            <div class="dropdown-container dropdown-container2">
+                <div class="dropdown-toggle click-dropdown2">
+                    <span>Richa</span>
+                    <img src="images/down-light-arrow.png" alt="img">
+                </div>
+                <div class="dropdown-menu dropdown-menu-author">
+                    <ul>
+                        <li value="Latest"><a href="#">Richa</a></li>
+                        <li value="Popular"><a href="#">Jhon Deo</a></li>
+                        <li value="Maria"><a href="#">Maria</a></li>
+                        <li value="Annable"><a href="#">Annable</a></li>
+                        <li value="Alex"><a href="#">Alex</a></li>
+                        <li value="Endrew"><a href="#">Endrew</a></li>
+                        <li value="Watson"><a href="#">Watson</a></li>
+                        <li value="Crish"><a href="#">Crish</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="overlay1"></div>
+    </section>
+
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script src="js/ck-script.js"></script>
+</body>
+
+</html>

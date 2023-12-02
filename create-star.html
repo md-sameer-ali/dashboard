@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlixa Dashboard</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!---===== FONT AWESOME ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---===== CUSTOM CSS ===== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customfont.css">
+</head>
+
+<body>
+    <!-- When my profile dropdown will open then it will be also open for background click hide dropdown -->
+    <div class="overlay1"></div>
+    <!--===== HEADER SECTION ===== -->
+    <header class="feed">
+        <div class="contain">
+            <div class="main_header main-header-new">
+                <div class="search_box search_box_active">
+                    <form><input type="search" placeholder="Search" class="textbar"></form>
+                </div>
+                <div class="log-in-div">
+                    <a class="after-login">
+                        <img src="images/profile-photo.png" alt="">
+                    </a>
+                    <div class="share-box-login">
+                        <ul>
+                            <li>
+                                <img src="images/sign-out-profile.png" alt="">
+                                <p>
+                                    <span>Sophia</span>
+                                    <span>sophia@vlixa.com</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Sign Out
+                                    <img src="images/sign-out-icon.png" alt="sign-out-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===== NAV SECTION ===== -->
+    <section class="nav-area">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="images/new-logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="nav-main">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/dashboard-icon.png" alt="Dashboard-icon">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="star.html">
+                        <img src="images/star-icon.png" alt="Dashboard-icon">
+                        <span>Star</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="post.html">
+                        <img src="images/post-icon.png" alt="Dashboard-icon">
+                        <span>Post</span>
+                    </a>
+                </li>
+                <li class="title-li">
+                    <span class="nav-title">Video</span>
+                </li>
+                <li>
+                    <a href="model.html">
+                        <img src="images/model-icon.png" alt="Dashboard-icon">
+                        <span>Model</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="model-category.html">
+                        <img src="images/category-icon.png" alt="Dashboard-icon">
+                        <span>Category</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="create-video.html">
+                        <img src="images/create-video-icon.png" alt="Dashboard-icon">
+                        <span>Create Video</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="published.html">
+                        <img src="images/publish-icon.png" alt="Dashboard-icon">
+                        <span>Published Videos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="unpublished.html">
+                        <img src="images/unpublish.png" alt="Dashboard-icon">
+                        <span>Unpublished Videos</span>
+                    </a>
+                </li>
+                <li class="title-li">
+                    <span class="nav-title">Blog</span>
+                </li>
+                <li>
+                    <a href="blog.html">
+                        <img src="images/blog.png" alt="Dashboard-icon">
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="blog-model.html">
+                        <img src="images/model-icon.png" alt="Dashboard-icon">
+                        <span>Model</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="blog-category.html">
+                        <img src="images/category-icon.png" alt="Dashboard-icon">
+                        <span>Category</span>
+                    </a>
+                </li>
+                <li class="title-li">
+                    <span class="nav-title">Others</span>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <img src="images/settings.png" alt="Dashboard-icon">
+                        <span>settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <img src="images/user.png" alt="Dashboard-icon">
+                        <span>Users</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!--===== DELETE POPUP ===== -->
+    <div class="delete-popup">
+        <div class="overlay2"></div>
+        <div class="popup">
+            <img src="images/delete-cross.png" alt="close" class="close">
+            <img src="images/delete-popup-icon.png" alt="what">
+            <p>Are you sure you want to delete?</p>
+            <div class="yes-no-button">
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+        </div>
+    </div>
+    <main class="total-content">
+        <div class="container">
+            <ul class="custom-breadcrumb">
+                <li>
+                    <a href="">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Star
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Create Star
+                    </a>
+                </li>
+            </ul>
+            <div class="settings-wrapper">
+                <div class="settings">
+                    <form action="" class="setting-form">
+                        <div class="name-area">
+                            <label>Name</label>
+                            <input type="text" placeholder="Name">
+                        </div>
+                        <div class="name-area">
+                            <label>Username [leave to auto generate]</label>
+                            <input type="text" placeholder="Username">
+                        </div>
+                        <div class="name-area">
+                            <label>Short Description </label>
+                            <div id="editor">This is some sample content.</div>
+                        </div>
+                        <div class="name-area">
+                            <label>Full Description </label>
+                            <div id="editor2">This is some sample content.</div>
+                        </div>
+                        <div class="upload-area">
+                            <label>Thumb</label>
+                            <div class="file-upload">
+                                <div class="file-select">
+                                    <div class="file-select-button" id="fileName">Choose File</div>
+                                    <div class="file-select-name" id="noFile">No file chosen...</div>
+                                    <input type="file" name="chooseFile" id="chooseFile">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="upload-area">
+                            <label>Cover</label>
+                            <div class="file-upload">
+                                <div class="file-select">
+                                    <div class="file-select-button" id="fileName2">Choose File</div>
+                                    <div class="file-select-name" id="noFile2">No file chosen...</div>
+                                    <input type="file" name="chooseFile" id="chooseFile2">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="name-area">
+                            <label>Onlyfans Link</label>
+                            <input type="text" placeholder="Onlyfans Link">
+                        </div>
+                        <div class="name-area">
+                            <label>Instagram Link</label>
+                            <input type="text" placeholder="Instagram Link">
+                        </div>
+                        <div class="name-area meta-area">
+                            <label>Twitter Link</label>
+                            <input type="text" placeholder="Twitter Link">
+                        </div>
+                        <div class="name-area meta-area">
+                            <label>Meta Title</label>
+                            <input type="text" placeholder="Meta Title">
+                        </div>
+                        <div class="details-area">
+                            <label>
+                                Meta Description
+                            </label>
+                            <textarea name="" id="" placeholder="Meta Description"></textarea>
+                        </div>
+                        <div class="details-area last-input-area">
+                            <label>
+                                Other Metas
+                            </label>
+                            <textarea name="" id="" placeholder="Other Metas"></textarea>
+                        </div>
+                        <div class="create-category-button">
+                            <button class="submit">
+                                Submit
+                            </button>
+                            <button class="cancel">
+                                Cancel
+                            </button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/script.js"></script>
+    <script src="js/ckeditor.js"></script>
+    <script src="js/ck-script.js"></script>
+    <script src="js/ck-script2.js"></script>
+</body>
+
+</html>

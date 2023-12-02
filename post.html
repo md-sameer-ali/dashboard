@@ -1,0 +1,839 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vlixa Dashboard</title>
+    <link rel="shortcut icon" href="images/favicon.png">
+    <!---===== FONT AWESOME ===== -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+        integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!---===== CUSTOM CSS ===== -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/customfont.css">
+</head>
+
+<body>
+    <!-- When my profile dropdown will open then it will be also open for background click hide dropdown -->
+    <div class="overlay1"></div>
+    <!--===== HEADER SECTION ===== -->
+    <header class="feed">
+        <div class="contain">
+            <div class="main_header main-header-new">
+                <div class="search_box search_box_active">
+                    <form><input type="search" placeholder="Search" class="textbar"></form>
+                </div>
+                <div class="log-in-div">
+                    <a class="after-login">
+                        <img src="images/profile-photo.png" alt="profile">
+                    </a>
+                    <div class="share-box-login">
+                        <ul>
+                            <li>
+                                <img src="images/sign-out-profile.png" alt="">
+                                <p>
+                                    <span>Sophia</span>
+                                    <span>sophia@vlixa.com</span>
+                                </p>
+                            </li>
+                            <li>
+                                <a href="">
+                                    Sign Out
+                                    <img src="images/sign-out-icon.png" alt="sign-out-icon">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- ===== NAV SECTION ===== -->
+    <section class="nav-area">
+        <div class="logo-area">
+            <a href="index.html">
+                <img src="images/new-logo.png" alt="Logo">
+            </a>
+        </div>
+        <nav class="nav-main">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img src="images/dashboard-icon.png" alt="Dashboard-icon">
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="star.html">
+                        <img src="images/star-icon.png" alt="Dashboard-icon">
+                        <span>Star</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="post.html">
+                        <img src="images/post-icon.png" alt="Dashboard-icon">
+                        <span>Post</span>
+                    </a>
+                </li>
+                <li class="title-li">
+                    <span class="nav-title">Video</span>
+                </li>
+                <li>
+                    <a href="model.html">
+                        <img src="images/model-icon.png" alt="Dashboard-icon">
+                        <span>Model</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="model-category.html">
+                        <img src="images/category-icon.png" alt="Dashboard-icon">
+                        <span>Category</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="create-video.html">
+                        <img src="images/create-video-icon.png" alt="Dashboard-icon">
+                        <span>Create Video</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="published.html">
+                        <img src="images/publish-icon.png" alt="Dashboard-icon">
+                        <span>Published Videos</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="unpublished.html">
+                        <img src="images/unpublish.png" alt="Dashboard-icon">
+                        <span>Unpublished Videos</span>
+                    </a>
+                </li>
+                <li class="title-li">
+                    <span class="nav-title">Blog</span>
+                </li>
+                <li>
+                    <a href="blog.html">
+                        <img src="images/blog.png" alt="Dashboard-icon">
+                        <span>Blog</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="blog-model.html">
+                        <img src="images/model-icon.png" alt="Dashboard-icon">
+                        <span>Model</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="blog-category.html">
+                        <img src="images/category-icon.png" alt="Dashboard-icon">
+                        <span>Category</span>
+                    </a>
+                </li>
+                <li class="title-li">
+                    <span class="nav-title">Others</span>
+                </li>
+                <li>
+                    <a href="setting.html">
+                        <img src="images/settings.png" alt="Dashboard-icon">
+                        <span>settings</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="user.html">
+                        <img src="images/user.png" alt="Dashboard-icon">
+                        <span>Users</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </section>
+    <!--===== DELETE POPUP ===== -->
+    <div class="delete-popup">
+        <div class="overlay2"></div>
+        <div class="popup">
+            <img src="images/delete-cross.png" alt="close" class="close">
+            <img src="images/delete-popup-icon.png" alt="what">
+            <p>Are you sure you want to delete?</p>
+            <div class="yes-no-button">
+                <button class="yes">Yes</button>
+                <button class="no">No</button>
+            </div>
+        </div>
+    </div>
+    <main class="total-content post-page">
+        <div class="container">
+            <ul class="custom-breadcrumb">
+                <li>
+                    <a href="">
+                        Home
+                    </a>
+                </li>
+                <li>
+                    <a href="">
+                        Post
+                    </a>
+                </li>
+            </ul>
+            <div class="content-wrapper">
+                <div class="content-head">
+                    <div class="button-sec">
+                        <a href="" class="first">Multiple Delete</a>
+                        <a href="create-post.html" class="second">Create</a>
+                    </div>
+                    <div class="search-small">
+                        <form>
+                            <input type="search" name="" id="" placeholder="Search">
+                        </form>
+                    </div>
+                </div>
+                <div class="content">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th class="sl">
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body"><span>SL NO.</span></div>
+                                            </label>
+                                        </div>
+                                    </form>
+
+                                </th>
+                                <th>
+                                    Star
+                                </th>
+                                <th>
+                                    CREATED AT
+                                </th>
+                                <th>
+                                    TOTAL Content
+                                </th>
+                                <th>
+                                    Action
+                                </th>
+                                <th>
+                                    Status
+                                </th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body">1</div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Emma Smith</p>
+                                        <span>@emma-smith</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Sept. 5,2023</p>
+                                        <span>8:15 p.m.</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    <div class="action-area">
+                                        <button class="action-button visit">
+                                            <div class="icon-area">
+                                                <img src="images/visit-grey.png" alt="visit" class="visit-img">
+                                                <img src="images/visit.png" alt="visit active" class="visit-img-active">
+                                            </div>
+                                            <span>Visit</span>
+                                        </button>
+                                        <button class="action-button edit">
+                                            <div class="icon-area">
+                                                <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                                <img src="images/edit-icon.png" alt="edit active"
+                                                    class="edit-img-active">
+                                            </div>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button class="action-button delete">
+                                            <div class="icon-area">
+                                                <img src="images/delete-grey.png" alt="delete" class="delete-img">
+                                                <img src="images/delete-icon.png" alt="delete active"
+                                                    class="delete-img-active">
+                                            </div>
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="live">Live</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body">1</div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Emma Smith</p>
+                                        <span>@emma-smith</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Sept. 5,2023</p>
+                                        <span>8:15 p.m.</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    <div class="action-area">
+                                        <button class="action-button visit">
+                                            <div class="icon-area">
+                                                <img src="images/visit-grey.png" alt="visit" class="visit-img">
+                                                <img src="images/visit.png" alt="visit active" class="visit-img-active">
+                                            </div>
+                                            <span>Visit</span>
+                                        </button>
+                                        <button class="action-button edit">
+                                            <div class="icon-area">
+                                                <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                                <img src="images/edit-icon.png" alt="edit active"
+                                                    class="edit-img-active">
+                                            </div>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button class="action-button delete">
+                                            <div class="icon-area">
+                                                <img src="images/delete-grey.png" alt="delete" class="delete-img">
+                                                <img src="images/delete-icon.png" alt="delete active"
+                                                    class="delete-img-active">
+                                            </div>
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="live">Live</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body">1</div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Emma Smith</p>
+                                        <span>@emma-smith</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Sept. 5,2023</p>
+                                        <span>8:15 p.m.</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    <div class="action-area">
+                                        <button class="action-button visit">
+                                            <div class="icon-area">
+                                                <img src="images/visit-grey.png" alt="visit" class="visit-img">
+                                                <img src="images/visit.png" alt="visit active" class="visit-img-active">
+                                            </div>
+                                            <span>Visit</span>
+                                        </button>
+                                        <button class="action-button edit">
+                                            <div class="icon-area">
+                                                <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                                <img src="images/edit-icon.png" alt="edit active"
+                                                    class="edit-img-active">
+                                            </div>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button class="action-button delete">
+                                            <div class="icon-area">
+                                                <img src="images/delete-grey.png" alt="delete" class="delete-img">
+                                                <img src="images/delete-icon.png" alt="delete active"
+                                                    class="delete-img-active">
+                                            </div>
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="live">Live</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body">1</div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Emma Smith</p>
+                                        <span>@emma-smith</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Sept. 5,2023</p>
+                                        <span>8:15 p.m.</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    <div class="action-area">
+                                        <button class="action-button visit">
+                                            <div class="icon-area">
+                                                <img src="images/visit-grey.png" alt="visit" class="visit-img">
+                                                <img src="images/visit.png" alt="visit active" class="visit-img-active">
+                                            </div>
+                                            <span>Visit</span>
+                                        </button>
+                                        <button class="action-button edit">
+                                            <div class="icon-area">
+                                                <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                                <img src="images/edit-icon.png" alt="edit active"
+                                                    class="edit-img-active">
+                                            </div>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button class="action-button delete">
+                                            <div class="icon-area">
+                                                <img src="images/delete-grey.png" alt="delete" class="delete-img">
+                                                <img src="images/delete-icon.png" alt="delete active"
+                                                    class="delete-img-active">
+                                            </div>
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="live">Live</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body">1</div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Emma Smith</p>
+                                        <span>@emma-smith</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Sept. 5,2023</p>
+                                        <span>8:15 p.m.</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    <div class="action-area">
+                                        <button class="action-button visit">
+                                            <div class="icon-area">
+                                                <img src="images/visit-grey.png" alt="visit" class="visit-img">
+                                                <img src="images/visit.png" alt="visit active" class="visit-img-active">
+                                            </div>
+                                            <span>Visit</span>
+                                        </button>
+                                        <button class="action-button edit">
+                                            <div class="icon-area">
+                                                <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                                <img src="images/edit-icon.png" alt="edit active"
+                                                    class="edit-img-active">
+                                            </div>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button class="action-button delete">
+                                            <div class="icon-area">
+                                                <img src="images/delete-grey.png" alt="delete" class="delete-img">
+                                                <img src="images/delete-icon.png" alt="delete active"
+                                                    class="delete-img-active">
+                                            </div>
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="live">Live</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body">1</div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Emma Smith</p>
+                                        <span>@emma-smith</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Sept. 5,2023</p>
+                                        <span>8:15 p.m.</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    <div class="action-area">
+                                        <button class="action-button visit">
+                                            <div class="icon-area">
+                                                <img src="images/visit-grey.png" alt="visit" class="visit-img">
+                                                <img src="images/visit.png" alt="visit active" class="visit-img-active">
+                                            </div>
+                                            <span>Visit</span>
+                                        </button>
+                                        <button class="action-button edit">
+                                            <div class="icon-area">
+                                                <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                                <img src="images/edit-icon.png" alt="edit active"
+                                                    class="edit-img-active">
+                                            </div>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button class="action-button delete">
+                                            <div class="icon-area">
+                                                <img src="images/delete-grey.png" alt="delete" class="delete-img">
+                                                <img src="images/delete-icon.png" alt="delete active"
+                                                    class="delete-img-active">
+                                            </div>
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="live">Live</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body">1</div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Emma Smith</p>
+                                        <span>@emma-smith</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Sept. 5,2023</p>
+                                        <span>8:15 p.m.</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    <div class="action-area">
+                                        <button class="action-button visit">
+                                            <div class="icon-area">
+                                                <img src="images/visit-grey.png" alt="visit" class="visit-img">
+                                                <img src="images/visit.png" alt="visit active" class="visit-img-active">
+                                            </div>
+                                            <span>Visit</span>
+                                        </button>
+                                        <button class="action-button edit">
+                                            <div class="icon-area">
+                                                <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                                <img src="images/edit-icon.png" alt="edit active"
+                                                    class="edit-img-active">
+                                            </div>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button class="action-button delete">
+                                            <div class="icon-area">
+                                                <img src="images/delete-grey.png" alt="delete" class="delete-img">
+                                                <img src="images/delete-icon.png" alt="delete active"
+                                                    class="delete-img-active">
+                                            </div>
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="live">Live</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body">1</div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Emma Smith</p>
+                                        <span>@emma-smith</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Sept. 5,2023</p>
+                                        <span>8:15 p.m.</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    <div class="action-area">
+                                        <button class="action-button visit">
+                                            <div class="icon-area">
+                                                <img src="images/visit-grey.png" alt="visit" class="visit-img">
+                                                <img src="images/visit.png" alt="visit active" class="visit-img-active">
+                                            </div>
+                                            <span>Visit</span>
+                                        </button>
+                                        <button class="action-button edit">
+                                            <div class="icon-area">
+                                                <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                                <img src="images/edit-icon.png" alt="edit active"
+                                                    class="edit-img-active">
+                                            </div>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button class="action-button delete">
+                                            <div class="icon-area">
+                                                <img src="images/delete-grey.png" alt="delete" class="delete-img">
+                                                <img src="images/delete-icon.png" alt="delete active"
+                                                    class="delete-img-active">
+                                            </div>
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="live">Live</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body">1</div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Emma Smith</p>
+                                        <span>@emma-smith</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Sept. 5,2023</p>
+                                        <span>8:15 p.m.</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    <div class="action-area">
+                                        <button class="action-button visit">
+                                            <div class="icon-area">
+                                                <img src="images/visit-grey.png" alt="visit" class="visit-img">
+                                                <img src="images/visit.png" alt="visit active" class="visit-img-active">
+                                            </div>
+                                            <span>Visit</span>
+                                        </button>
+                                        <button class="action-button edit">
+                                            <div class="icon-area">
+                                                <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                                <img src="images/edit-icon.png" alt="edit active"
+                                                    class="edit-img-active">
+                                            </div>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button class="action-button delete">
+                                            <div class="icon-area">
+                                                <img src="images/delete-grey.png" alt="delete" class="delete-img">
+                                                <img src="images/delete-icon.png" alt="delete active"
+                                                    class="delete-img-active">
+                                            </div>
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="live">Live</button>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <form action="">
+                                        <div class="checkboxes__item">
+                                            <label class="checkbox style-c">
+                                                <input type="checkbox" />
+                                                <div class="checkbox__checkmark"></div>
+                                                <div class="checkbox__body">1</div>
+                                            </label>
+                                        </div>
+                                    </form>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Emma Smith</p>
+                                        <span>@emma-smith</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    <div class="user-name">
+                                        <p>Sept. 5,2023</p>
+                                        <span>8:15 p.m.</span>
+                                    </div>
+                                </td>
+                                <td>
+                                    12
+                                </td>
+                                <td>
+                                    <div class="action-area">
+                                        <button class="action-button visit">
+                                            <div class="icon-area">
+                                                <img src="images/visit-grey.png" alt="visit" class="visit-img">
+                                                <img src="images/visit.png" alt="visit active" class="visit-img-active">
+                                            </div>
+                                            <span>Visit</span>
+                                        </button>
+                                        <button class="action-button edit">
+                                            <div class="icon-area">
+                                                <img src="images/edit-grey.png" alt="edit" class="edit-img">
+                                                <img src="images/edit-icon.png" alt="edit active"
+                                                    class="edit-img-active">
+                                            </div>
+                                            <span>Edit</span>
+                                        </button>
+                                        <button class="action-button delete">
+                                            <div class="icon-area">
+                                                <img src="images/delete-grey.png" alt="delete" class="delete-img">
+                                                <img src="images/delete-icon.png" alt="delete active"
+                                                    class="delete-img-active">
+                                            </div>
+                                            <span>Delete</span>
+                                        </button>
+                                    </div>
+                                </td>
+                                <td>
+                                    <button class="live">Live</button>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="page-changing-area">
+                    <div class="page-button">
+                        <button class="prev">
+                            <i class="fa-solid fa-chevron-left"></i>
+                            Prev
+                        </button>
+                        <span>1</span>
+                        <button class="next">
+                            Next
+                            <i class="fa-solid fa-chevron-right"></i>
+                        </button>
+                    </div>
+                    <div class="count-dropdown">
+                        <button class="c-dropdown">
+                            10
+                            <i class="fa-solid fa-chevron-down"></i>
+                        </button>
+                        <p>
+                            Total Pages: <span>1</span>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <script src="js/jquery-min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
